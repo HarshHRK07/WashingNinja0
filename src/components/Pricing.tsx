@@ -51,7 +51,7 @@ export default function Pricing() {
     },
     {
       name: 'Laundry Wash (Per piece)',
-      :'Varies',
+      price:'Varies',
       priceType: 'Per piece',
       features: [
         'Shirts (Laundry): ₹199',
@@ -62,7 +62,7 @@ export default function Pricing() {
     },
     {
       name: 'Dry Cleaning (Per piece)',
-      : 'Varies',
+      price: 'Varies',
       priceType: 'Per piece',
       features: [
         'Shirts (Dry Clean): ₹299',
@@ -76,7 +76,7 @@ export default function Pricing() {
     },
     {
       name: 'Boutique Services',
-     : 'Varies',
+     price: 'Varies',
       priceType: 'Per piece',
       features: [
         'Alterations: ₹699 (Hemming, Tailoring)',
