@@ -10,8 +10,8 @@ export default function Pricing() {
         'Wash & Fold',
         'Includes up to 5 kg',
         'Regular Garments (T-shirts, Shirts, Pants)',
-        'Free Pickup & Delivery on orders above ₹500',
-        '₹80 per kg for additional weight'
+        '₹80 per kg for additional weight',
+        'Free Pickup & Delivery on orders above ₹500'
       ]
     },
     {
@@ -22,42 +22,8 @@ export default function Pricing() {
         'Premium Wash & Fold',
         'Includes up to 7 kg',
         'Delicate Care (Silk, Wool, Linen)',
-        'Free Pickup & Delivery on orders above ₹500',
-        '₹100 per kg for additional weight'
-      ]
-    },
-    {
-      name: 'Dry Cleaning (Per piece)',
-      price: '299',
-      features: [
-        'Shirts, T-shirts, Casual Pants',
-        'Delicate Care & Pressing',
-        'Free Pickup & Delivery on orders above ₹500',
-        '₹499 for Jeans, Jackets, Coats',
-        '₹799 for Suits, Blazers, Evening Dresses',
-        '₹599 for Silk, Wool, Cashmere'
-      ]
-    },
-    {
-      name: 'Household Laundry (Per item)',
-      price: '499',
-      features: [
-        'Blankets, Quilts, Rugs: ₹899',
-        'Curtains & Bedspreads: ₹499',
-        'Towels & Bedsheets: ₹199',
-        'Pillows & Cushions: ₹199',
+        '₹100 per kg for additional weight',
         'Free Pickup & Delivery on orders above ₹500'
-      ]
-    },
-    {
-      name: 'Laundry Wash (Per piece)',
-      price:'Varies',
-      priceType: 'Per piece',
-      features: [
-        'Shirts (Laundry): ₹199',
-        'T-Shirts (Laundry): ₹149',
-        'Jeans & Pants (Laundry): ₹249',
-        'Sweaters (Laundry): ₹299'
       ]
     },
     {
@@ -71,17 +37,42 @@ export default function Pricing() {
         'Blazers (Dry Clean): ₹499',
         'Suits (Dry Clean): ₹799',
         'Dresses (Dry Clean): ₹399',
-        'Silk & Woolen Garments: ₹599'
+        'Silk & Woolen Garments: ₹599',
+        'Free Pickup & Delivery on orders above ₹500'
+      ]
+    },
+    {
+      name: 'Laundry Wash (Per piece)',
+      price: 'Varies',
+      priceType: 'Per piece',
+      features: [
+        'Shirts (Laundry): ₹199',
+        'T-Shirts (Laundry): ₹149',
+        'Jeans & Pants (Laundry): ₹249',
+        'Sweaters (Laundry): ₹299',
+        'Free Pickup & Delivery on orders above ₹500'
+      ]
+    },
+    {
+      name: 'Household Laundry (Per item)',
+      price: 'Varies',
+      priceType: 'Per item',
+      features: [
+        'Blankets, Quilts, Rugs: ₹899',
+        'Curtains & Bedspreads: ₹499',
+        'Towels & Bedsheets: ₹199',
+        'Pillows & Cushions: ₹199',
+        'Free Pickup & Delivery on orders above ₹500'
       ]
     },
     {
       name: 'Boutique Services',
-     price: 'Varies',
+      price: 'Varies',
       priceType: 'Per piece',
       features: [
-        'Alterations: ₹699 (Hemming, Tailoring)',
-        'Delicate Fabric Care: ₹599 (Silk, Wool)',
-        'Embroidery & Beading: ₹999 (Custom Designs)',
+        'Alterations (Hemming, Tailoring): ₹699',
+        'Delicate Fabric Care (Silk, Wool): ₹599',
+        'Embroidery & Beading (Custom Designs): ₹999',
         'Free Pickup & Delivery on orders above ₹500'
       ]
     }
@@ -108,7 +99,7 @@ export default function Pricing() {
               <h3 className="text-2xl font-semibold mb-4">{plan.name}</h3>
               <div className="mb-8">
                 <span className="text-4xl font-bold">
-                  ₹{plan.price} {plan.priceType}
+                  {plan.price === 'Varies' ? 'Price Varies' : `₹${plan.price} ${plan.priceType}`}
                 </span>
               </div>
               <ul className="space-y-4 mb-8">
