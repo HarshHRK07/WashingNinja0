@@ -6,6 +6,7 @@ export default function Pricing() {
     {
       name: 'Basic Wash & Fold (Per kg)',
       price: '399',
+      priceType: '',
       features: [
         'Wash & Fold',
         'Includes up to 5 kg',
@@ -17,6 +18,7 @@ export default function Pricing() {
     {
       name: 'Premium Wash & Fold (Per kg)',
       price: '649',
+      priceType: '',
       featured: true,
       features: [
         'Premium Wash & Fold',
@@ -99,7 +101,7 @@ export default function Pricing() {
               <h3 className="text-2xl font-semibold mb-4">{plan.name}</h3>
               <div className="mb-8">
                 <span className="text-4xl font-bold">
-                  {plan.price === 'Varies' ? 'Price Varies' : `₹${plan.price} ${plan.priceType}`}
+                  ₹{plan.price} {plan.price !== 'Varies' && plan.priceType}
                 </span>
               </div>
               <ul className="space-y-4 mb-8">
