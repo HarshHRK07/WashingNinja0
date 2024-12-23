@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shirt, Wind, Droplet } from 'lucide-react';
+import { Shirt, Wind, Droplet, Sparkles, RefreshCw, Scissors, Shoe, Layers, Feather } from 'lucide-react';
 
 export default function Services() {
   const services = [
@@ -17,6 +17,36 @@ export default function Services() {
       icon: <Droplet className="w-12 h-12" />,
       title: 'Express Service',
       description: 'Same-day service available for urgent requirements at a small premium.'
+    },
+    {
+      icon: <Sparkles className="w-12 h-12" />,
+      title: 'Stain Removal',
+      description: 'Effective removal of tough stains with advanced cleaning techniques.'
+    },
+    {
+      icon: <RefreshCw className="w-12 h-12" />,
+      title: 'Laundry Subscription',
+      description: 'Affordable monthly plans for regular laundry services tailored to your needs.'
+    },
+    {
+      icon: <Scissors className="w-12 h-12" />,
+      title: 'Alterations & Repairs',
+      description: 'Professional tailoring services to alter or repair your garments perfectly.'
+    },
+    {
+      icon: <Shoe className="w-12 h-12" />,
+      title: 'Shoe Cleaning',
+      description: 'Specialized cleaning and care for your shoes to keep them looking new.'
+    },
+    {
+      icon: <Feather className="w-12 h-12" />,
+      title: 'Blanket Cleaning',
+      description: 'Comprehensive cleaning for your blankets, comforters, and duvets.'
+    },
+    {
+      icon: <Layers className="w-12 h-12" />,
+      title: 'Boutique Services',
+      description: 'Exclusive garment care, packaging, and delivery tailored for boutique clients.'
     }
   ];
 
@@ -26,7 +56,7 @@ export default function Services() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <p className="text-xl text-gray-600">
-            Professional care for all your garments
+            Professional care for all your garments and essentials
           </p>
         </div>
 
