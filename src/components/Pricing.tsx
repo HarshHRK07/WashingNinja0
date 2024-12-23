@@ -1,71 +1,84 @@
 import React from 'react';
-import { Shirt, Wind, Droplet, Sparkles, RefreshCw, Scissors, Shoe, Layers, Feather } from 'lucide-react';
+import { Check } from 'lucide-react';
 
-export default function Services() {
-  const services = [
+export default function Pricing() {
+  const plans = [
     {
-      icon: <Shirt className="w-12 h-12" />,
-      title: 'Wash & Fold',
-      description: 'Professional washing, drying, and folding service for all your regular clothes.'
+      name: 'Basic Wash',
+      price: '299',
+      features: [
+        'Wash & Fold Service',
+        '48 Hour Turnaround',
+        'Free Pickup & Delivery',
+        'Basic Stain Treatment'
+      ]
     },
     {
-      icon: <Wind className="w-12 h-12" />,
-      title: 'Dry Cleaning',
-      description: 'Expert dry cleaning for your delicate garments, suits, and special care items.'
+      name: 'Premium Care',
+      price: '499',
+      featured: true,
+      features: [
+        'Premium Wash & Fold',
+        '24 Hour Turnaround',
+        'Free Pickup & Delivery',
+        'Advanced Stain Treatment',
+        'Fabric Softener Included',
+        'Special Care Instructions'
+      ]
     },
     {
-      icon: <Droplet className="w-12 h-12" />,
-      title: 'Express Service',
-      description: 'Same-day service available for urgent requirements at a small premium.'
-    },
-    {
-      icon: <Sparkles className="w-12 h-12" />,
-      title: 'Stain Removal',
-      description: 'Effective removal of tough stains with advanced cleaning techniques.'
-    },
-    {
-      icon: <RefreshCw className="w-12 h-12" />,
-      title: 'Laundry Subscription',
-      description: 'Affordable monthly plans for regular laundry services tailored to your needs.'
-    },
-    {
-      icon: <Scissors className="w-12 h-12" />,
-      title: 'Alterations & Repairs',
-      description: 'Professional tailoring services to alter or repair your garments perfectly.'
-    },
-    {
-      icon: <Shoe className="w-12 h-12" />,
-      title: 'Shoe Cleaning',
-      description: 'Specialized cleaning and care for your shoes to keep them looking new.'
-    },
-    {
-      icon: <Feather className="w-12 h-12" />,
-      title: 'Blanket Cleaning',
-      description: 'Comprehensive cleaning for your blankets, comforters, and duvets.'
-    },
-    {
-      icon: <Layers className="w-12 h-12" />,
-      title: 'Boutique Services',
-      description: 'Exclusive garment care, packaging, and delivery tailored for boutique clients.'
+      name: 'Dry Clean',
+      price: '699',
+      features: [
+        'Professional Dry Cleaning',
+        '72 Hour Turnaround',
+        'Free Pickup & Delivery',
+        'Delicate Care',
+        'Pressing & Ironing'
+      ]
     }
   ];
 
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="pricing" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Simple Pricing</h2>
           <p className="text-xl text-gray-600">
-            Professional care for all your garments and essentials
+            Choose the perfect plan for your needs
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12">
-          {services.map((service, index) => (
-            <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
-              <div className="text-blue-600 mb-6">{service.icon}</div>
-              <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-              <p className="text-gray-600">{service.description}</p>
+        <div className="grid md:grid-cols-3 gap-8">
+          {plans.map((plan, index) => (
+            <div
+              key={index}
+              className={`bg-white rounded-xl shadow-lg p-8 ${
+                plan.featured ? 'ring-2 ring-blue-600 scale-105' : ''
+              }`}
+            >
+              <h3 className="text-2xl font-semibold mb-4">{plan.name}</h3>
+              <div className="mb-8">
+                <span className="text-4xl font-bold">₹{plan.price}</span>
+                <span className="text-gray-600">/month</span>
+              </div>
+              <ul className="space-y-4 mb-8">
+                {plan.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-center">
+                    <Check className="w-5 h-5 text-blue-600 mr-3" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <button
+                className={`w-full py-3 px-6 rounded-full font-semibold ${
+                  plan.featured
+                    ? 'bg-blue-600 text-white hover:bg-blue-700'
+                    : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+                } transition`}
+              >
+                Choose Plan
+              </button>
             </div>
           ))}
         </div>
