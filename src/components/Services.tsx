@@ -1,110 +1,129 @@
 import React from 'react';
-import { Shirt, Wind, Droplet } from 'lucide-react';
+import { 
+  Shirt, 
+  Wind, 
+  Droplet, 
+  Shoe, 
+  Scissors, 
+  Iron, 
+  ShoppingBag, 
+  Curtains, 
+  Carpet, 
+  Wallet, 
+  User, 
+  Bed, 
+  Pillow, 
+  Hat, 
+  Blood, 
+  Diamond, 
+  TeddyBear, 
+  Mattress, 
+  Jeans 
+} from 'lucide-react'; // Ensure these icons exist or import alternatives.
 
 export default function Services() {
   const services = [
     {
-        icon: <Shirt className="w-12 h-12" />,
-        title: 'Wash & Fold',
-        description: 'Professional washing, drying, and folding service for all your regular clothes.'
+      icon: <Shirt className="w-12 h-12" />,
+      title: 'Wash & Fold',
+      description: 'Professional washing, drying, and folding service for all your regular clothes.'
     },
     {
-        icon: <Wind className="w-12 h-12" />,
-        title: 'Dry Cleaning',
-        description: 'Expert dry cleaning for your delicate garments, suits, and special care items.'
+      icon: <Wind className="w-12 h-12" />,
+      title: 'Dry Cleaning',
+      description: 'Expert dry cleaning for your delicate garments, suits, and special care items.'
     },
     {
-        icon: <Droplet className="w-12 h-12" />,
-        title: 'Express Service',
-        description: 'Same-day service available for urgent requirements at a small premium.'
+      icon: <Droplet className="w-12 h-12" />,
+      title: 'Express Service',
+      description: 'Same-day service available for urgent requirements at a small premium.'
     },
     {
-        icon: <Shoe className="w-12 h-12" />,
-        title: 'Shoe Cleaning',
-        description: 'Comprehensive cleaning and polishing service for your footwear.'
+      icon: <Shoe className="w-12 h-12" />,
+      title: 'Shoe Cleaning',
+      description: 'Comprehensive cleaning and polishing service for your footwear.'
     },
     {
-        icon: <Thread className="w-12 h-12" />,
-        title: 'Boutique Services',
-        description: 'Tailored garment care for designer and high-fashion items.'
+      icon: <Scissors className="w-12 h-12" />,
+      title: 'Boutique Services',
+      description: 'Tailored garment care for designer and high-fashion items.'
     },
     {
-        icon: <Steam className="w-12 h-12" />,
-        title: 'Steam Iron',
-        description: 'Gentle steam ironing to remove wrinkles without damaging fabrics.'
+      icon: <Iron className="w-12 h-12" />,
+      title: 'Steam Iron',
+      description: 'Gentle steam ironing to remove wrinkles without damaging fabrics.'
     },
     {
-        icon: <WashSteam className="w-12 h-12" />,
-        title: 'Wash & Steam Iron',
-        description: 'Complete washing and steam ironing for crisp, ready-to-wear clothes.'
+      icon: <Droplet className="w-12 h-12" />,
+      title: 'Wash & Steam Iron',
+      description: 'Complete washing and steam ironing for crisp, ready-to-wear clothes.'
     },
     {
-        icon: <Bag className="w-12 h-12" />,
-        title: 'Bag Cleaning',
-        description: 'Deep cleaning and restoration service for your handbags and backpacks.'
+      icon: <ShoppingBag className="w-12 h-12" />,
+      title: 'Bag Cleaning',
+      description: 'Deep cleaning and restoration service for your handbags and backpacks.'
     },
     {
-        icon: <Curtain className="w-12 h-12" />,
-        title: 'Curtain Cleaning',
-        description: 'Cleaning services for your curtains to make them look fresh.'
+      icon: <Curtains className="w-12 h-12" />,
+      title: 'Curtain Cleaning',
+      description: 'Cleaning services for your curtains to make them look fresh.'
     },
     {
-        icon: <Carpet className="w-12 h-12" />,
-        title: 'Carpet Cleaning',
-        description: 'Thorough cleaning for your carpets and rugs to remove dirt and stains.'
+      icon: <Carpet className="w-12 h-12" />,
+      title: 'Carpet Cleaning',
+      description: 'Thorough cleaning for your carpets and rugs to remove dirt and stains.'
     },
     {
-        icon: <Leather className="w-12 h-12" />,
-        title: 'Leather Care',
-        description: 'Specialized cleaning and care for your leather garments and accessories.'
+      icon: <Wallet className="w-12 h-12" />,
+      title: 'Leather Care',
+      description: 'Specialized cleaning and care for your leather garments and accessories.'
     },
     {
-        icon: <Uniform className="w-12 h-12" />,
-        title: 'Uniform Cleaning',
-        description: 'Expert cleaning and pressing for school, office, or military uniforms.'
+      icon: <User className="w-12 h-12" />,
+      title: 'Uniform Cleaning',
+      description: 'Expert cleaning and pressing for school, office, or military uniforms.'
     },
     {
-        icon: <Comforter className="w-12 h-12" />,
-        title: 'Comforter Cleaning',
-        description: 'Professional cleaning for your comforters, duvets, and blankets.'
+      icon: <Bed className="w-12 h-12" />,
+      title: 'Comforter Cleaning',
+      description: 'Professional cleaning for your comforters, duvets, and blankets.'
     },
     {
-        icon: <Pillow className="w-12 h-12" />,
-        title: 'Pillow Cleaning',
-        description: 'Sanitization and cleaning of pillows to ensure hygiene and comfort.'
+      icon: <Pillow className="w-12 h-12" />,
+      title: 'Pillow Cleaning',
+      description: 'Sanitization and cleaning of pillows to ensure hygiene and comfort.'
     },
     {
-        icon: <Hat className="w-12 h-12" />,
-        title: 'Hat Cleaning',
-        description: 'Delicate cleaning for caps, hats, and other headwear.'
+      icon: <Hat className="w-12 h-12" />,
+      title: 'Hat Cleaning',
+      description: 'Delicate cleaning for caps, hats, and other headwear.'
     },
     {
-        icon: <StainRemoval className="w-12 h-12" />,
-        title: 'Stain Removal',
-        description: 'Advanced stain removal treatments for tough stains on all fabrics.'
+      icon: <Blood className="w-12 h-12" />,
+      title: 'Stain Removal',
+      description: 'Advanced stain removal treatments for tough stains on all fabrics.'
     },
     {
-        icon: <Wedding className="w-12 h-12" />,
-        title: 'Wedding Dress Cleaning',
-        description: 'Specialized cleaning and preservation for wedding dresses and gowns.'
+      icon: <Diamond className="w-12 h-12" />,
+      title: 'Wedding Dress Cleaning',
+      description: 'Specialized cleaning and preservation for wedding dresses and gowns.'
     },
     {
-        icon: <Toy className="w-12 h-12" />,
-        title: 'Soft Toy Cleaning',
-        description: 'Safe cleaning and sanitization for your plush toys and stuffed animals.'
+      icon: <TeddyBear className="w-12 h-12" />,
+      title: 'Soft Toy Cleaning',
+      description: 'Safe cleaning and sanitization for your plush toys and stuffed animals.'
     },
     {
-        icon: <Mattress className="w-12 h-12" />,
-        title: 'Mattress Cleaning',
-        description: 'Deep cleaning and sanitization for mattresses to remove dust mites and odors.'
+      icon: <Mattress className="w-12 h-12" />,
+      title: 'Mattress Cleaning',
+      description: 'Deep cleaning and sanitization for mattresses to remove dust mites and odors.'
     },
     {
-        icon: <Denim className="w-12 h-12" />,
-        title: 'Denim Care',
-        description: 'Special treatments to maintain the color and texture of your denim wear.'
+      icon: <Jeans className="w-12 h-12" />,
+      title: 'Denim Care',
+      description: 'Special treatments to maintain the color and texture of your denim wear.'
     }
-];
-  
+  ];
 
   return (
     <section id="services" className="py-20 bg-gray-50">
@@ -116,7 +135,7 @@ export default function Services() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12">
+        <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-12">
           {services.map((service, index) => (
             <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
               <div className="text-blue-600 mb-6">{service.icon}</div>
