@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shirt, Wind, Droplet, Sparkles, RefreshCw, Scissors, ShoePrint, Layers, Feather } from 'lucide-react';
+import { Shirt, Wind, Droplet, Sparkles, RefreshCw, Scissors, Layers, Feather } from 'lucide-react';
 
 export default function Services() {
   const services = [
@@ -32,11 +32,6 @@ export default function Services() {
       icon: <Scissors className="w-12 h-12" />,
       title: 'Alterations & Repairs',
       description: 'Professional tailoring services to alter or repair your garments perfectly.'
-    },
-    {
-      icon: <ShoePrint className="w-12 h-12" />,
-      title: 'Shoe Cleaning',
-      description: 'Specialized cleaning and care for your shoes to keep them looking new.'
     },
     {
       icon: <Feather className="w-12 h-12" />,
