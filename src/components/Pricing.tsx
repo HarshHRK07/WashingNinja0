@@ -6,7 +6,6 @@ export default function Pricing() {
     {
       name: 'Basic Wash & Fold (Per kg)',
       price: '399',
-      priceType: 'Per kg',
       features: [
         'Wash & Fold',
         'Includes up to 5 kg',
@@ -18,7 +17,6 @@ export default function Pricing() {
     {
       name: 'Premium Wash & Fold (Per kg)',
       price: '649',
-      priceType: 'Per kg',
       featured: true,
       features: [
         'Premium Wash & Fold',
@@ -31,7 +29,6 @@ export default function Pricing() {
     {
       name: 'Dry Cleaning (Per piece)',
       price: '299',
-      priceType: 'Per piece',
       features: [
         'Shirts, T-shirts, Casual Pants',
         'Delicate Care & Pressing',
@@ -44,7 +41,6 @@ export default function Pricing() {
     {
       name: 'Household Laundry (Per item)',
       price: '499',
-      priceType: 'Per item',
       features: [
         'Blankets, Quilts, Rugs: ₹899',
         'Curtains & Bedspreads: ₹499',
@@ -55,7 +51,7 @@ export default function Pricing() {
     },
     {
       name: 'Laundry Wash (Per piece)',
-      price: 'Varies',
+      'Varies',
       priceType: 'Per piece',
       features: [
         'Shirts (Laundry): ₹199',
@@ -66,7 +62,7 @@ export default function Pricing() {
     },
     {
       name: 'Dry Cleaning (Per piece)',
-      price: 'Varies',
+      'Varies',
       priceType: 'Per piece',
       features: [
         'Shirts (Dry Clean): ₹299',
@@ -80,7 +76,7 @@ export default function Pricing() {
     },
     {
       name: 'Boutique Services',
-      price: 'Varies',
+     'Varies',
       priceType: 'Per piece',
       features: [
         'Alterations: ₹699 (Hemming, Tailoring)',
